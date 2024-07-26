@@ -26,9 +26,15 @@
 
         <!-- Template Stylesheet -->
         <link href="css/style.css" rel="stylesheet">
+        <link href="scss/bootstrap.scss" rel="stylesheet">
+        <link href="scss/index.scss" rel="stylesheet">
+
+
     </head>
 
     <body>
+
+          
         <!-- Spinner Start -->
         <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
             <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
@@ -41,7 +47,10 @@
             <div class="row g-5">
                 <div class="col-lg-4 sticky-lg-top vh-100">
                     <div class="d-flex flex-column h-100 text-center overflow-auto shadow">
-                        <img class="w-100 img-fluid mb-4" src="img/profile.jpeg" alt="Image">
+                        <div class="profile-img-container">
+                            <img class="profile-pic mb-4" src="img/profile.jpeg" alt="Image">
+
+                        </div>
                         <h1 class="text-primary mt-2">Shaisab Mistry</h1>
                         <div class="mb-4" style="height: 22px;">
                             <h4 class="typed-text-output d-inline-block text-light"></h4>
@@ -58,8 +67,8 @@
                         </div>
 
                         <div class="d-flex align-items-end justify-content-between border-top">
-                            <a href="files/Mistry_Res (2).pdf" class="btn w-50 border-end">View Resume</a>
-                            <a href="mailto:shaisabmistry@gmail.com" class="btn w-50 btn-scroll">Contact Me</a>
+                            <a href="files/Mistry_Res (2).pdf" class="btn w-50 border-end btn-dark">View Resume</a>
+                            <a href="mailto:shaisabmistry@gmail.com" class="btn w-50 btn-scroll btn-dark" >Contact Me</a>
                         </div>
                     </div>
                 </div>
@@ -237,6 +246,7 @@
                                             <div class="tag" style="color: rgb(213, 0, 255);"><span>#</span> Java</div>
                                             <div class="tag" style="color: rgb(255, 230, 0);"><span>#</span> JavaScript</div>
                                             <div class="tag" style="color: rgb(255, 0, 0);"><span>#</span> R</div>
+                                            <div class="tag" style="color: rgb(213, 113, 0);"><span>#</span> Shell</div>
 
                                             <!-- duplicated content -->
                                             <div class="tag" style="color: rgb(28, 165, 255);"><span>#</span> Python</div>
@@ -245,6 +255,8 @@
                                             <div class="tag" style="color: rgb(213, 0, 255);"><span>#</span> Java</div>
                                             <div class="tag" style="color: rgb(255, 230, 0);"><span>#</span> JavaScript</div>
                                             <div class="tag" style="color: rgb(255, 0, 0);"><span>#</span> R</div>
+                                            <div class="tag" style="color: rgb(213, 113, 0);"><span>#</span> Shell</div>
+
 
                                         </div>
                                     </div>
@@ -286,8 +298,66 @@
                                 </div>
                             </div>
                         
-                    </section>      
-                    <!-- Skills End -->
+                    </section>   
+                    
+                    <section class="py-5 border-bottom wow fadeInUp" data-wow-delay="0.1s">
+                        <h1 class="title pb-3 mb-5">Frameworks</h1>
+                            <div class="hexagon-container">
+
+                                <div class="hexagon-wrapper">
+                                    <div class="hexagon">
+                                      <i>
+                                        <svg class="framework-logo" viewBox="0 0 256 256" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid" fill="#000000"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <g> <rect fill="#092E20" x="0" y="0" width="256" height="256" rx="28"> </rect> <path d="M186.377012,94.197636 L186.377012,160.424478 C186.377012,183.243286 184.707519,194.187745 179.699037,203.649406 C175.060358,212.741266 168.937684,218.490548 156.323731,224.798721 L129.794937,212.183571 C142.410087,206.247593 148.531564,201.05481 152.427049,193.074749 C156.509231,184.91278 157.808923,175.451119 157.808923,150.593015 L157.808923,94.197636 L186.377012,94.197636 Z M140.928486,50.0787207 L140.928486,182.316986 C126.272844,185.099476 115.512688,186.212472 103.826231,186.212472 C68.9487718,186.212472 50.7686431,170.445031 50.7686431,140.205054 C50.7686431,111.079269 70.0629644,92.1583404 99.9295492,92.1583404 C104.567032,92.1583404 108.091519,92.5281423 112.359199,93.6411381 L112.359199,50.0787207 L140.928486,50.0787207 Z M102.713236,115.160254 C88.243093,115.160254 79.8944275,124.065418 79.8944275,139.647359 C79.8944275,154.860696 87.8720944,163.208164 102.527736,163.208164 C105.680028,163.208164 108.278215,163.022665 112.359199,162.467364 L112.359199,116.643052 C109.020212,115.531253 106.237722,115.160254 102.713236,115.160254 Z M186.377012,50.2307105 L186.377012,79.5419941 L157.808923,79.5419941 L157.808923,50.2307105 L186.377012,50.2307105 Z" fill="#FFFFFD"> </path> </g> </g></svg>
+                                    </i>
+                                    </div>
+                                    <span class="framework-name">Django</span>
+
+                                  </div>
+            
+                            </div>
+   
+                        
+                    </section>   
+                    
+                    <section class="py-5 border-bottom wow fadeInUp" data-wow-delay="0.1s">
+                        <h1 class="title pb-3 mb-5">Libraries</h1>
+                            <div class="libraries-container">
+
+                                <div id="wrapper">
+                                    <a class="my-super-cool-btn color-bootstrap" >
+                                      <div class="dots-container" >
+                                        <div class="dot" ></div>
+                                        <div class="dot"></div>
+                                        <div class="dot"></div>
+                                        <div class="dot"></div>
+                                      </div>
+                                      <span class="libraries-name"  >
+                                        Bootstrap
+                                      </span>
+                                    </a>
+                                </div>
+
+                                <div id="wrapper" >
+                                    <a class="my-super-cool-btn color-selenium" >
+                                      <div class="dots-container" >
+                                        <div class="dot"></div>
+                                        <div class="dot"></div>
+                                        <div class="dot"></div>
+                                        <div class="dot"></div>
+                                      </div>
+                                      <span class="libraries-name">
+                                        Selenium
+                                      </span>
+                                    </a>
+                                </div>
+
+                                
+            
+                            </div>
+   
+                        
+                    </section>    
+                                           <!-- Skills End -->
 
                     <!-- Subscribe Start 
                     <section class="wow fadeInUp" data-wow-delay="0.1s">
@@ -305,41 +375,39 @@
                     <!-- Projects Start -->
                     <section class="py-5 border-bottom wow fadeInUp" data-wow-delay="0.1s">
                         <h1 class="title pb-3 mb-5">Projects</h1>
-                        <div class="row g-4">
-                            <div class="col-md-6">
-                                <div class="service-item">
-                                    <i class="fa fa-2x fa-laptop-code mx-auto mb-4"></i>
-                                    <h5 class="mb-2">Web Design</h5>
-                                    <p class="mb-0">Justo sit justo eos amet tempor amet clita amet ipsum eos elitr. Amet lorem lorem lorem est amet labore</p>
+                        
+                        <div class="project-container">
+                            <div class="project">
+
+                                <div class="project-img-container">
+                                    <a href="https://github.com/shaisabm/StudyGui" target="_blank">
+                                        <img class="project-img" src="img/project-1.png">
+                                    </a>        
                                 </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="service-item">
-                                    <i class="fab fa-2x fa-android mx-auto mb-4"></i>
-                                    <h5 class="mb-2">Apps Development</h5>
-                                    <p class="mb-0">Justo sit justo eos amet tempor amet clita amet ipsum eos elitr. Amet lorem lorem lorem est amet labore</p>
+
+                                <div class="project-name-container" >
+                                    <a href="https://github.com/shaisabm/StudyGui" target="_blank">
+                                        <span class="project-name">StudyGUI</span>
+                                    </a>
                                 </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="service-item">
-                                    <i class="fa fa-2x fa-search mx-auto mb-4"></i>
-                                    <h5 class="mb-2">SEO</h5>
-                                    <p class="mb-0">Justo sit justo eos amet tempor amet clita amet ipsum eos elitr. Amet lorem lorem lorem est amet labore</p>
+
+                                <div class="project-description">
+                                    <span>
+                                        This web project enables students to create profiles, form study groups, and share knowledge. Key features include profile creation, messaging, and resource sharing within study groups. The platform promotes collaborative learning and peer support.
+                                    </span>
                                 </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="service-item">
-                                    <i class="fa fa-2x fa-edit mx-auto mb-4"></i>
-                                    <h5 class="mb-2">Content Creating</h5>
-                                    <p class="mb-0">Justo sit justo eos amet tempor amet clita amet ipsum eos elitr. Amet lorem lorem lorem est amet labore</p>
-                                </div>
+                                <di class="project-tags"></di>
                             </div>
                         </div>
+                      
+
+
                     </section>
+
                     <!-- Services End -->
 
                     <!-- Blogs Start -->
-                    <section class="py-5 border-bottom wow fadeInUp" data-wow-delay="0.1s">
+                    <!-- <section class="py-5 border-bottom wow fadeInUp" data-wow-delay="0.1s">
                         <h1 class="title pb-3 mb-5">Blogs</h1>
                         <div class="row">
                             <div class="col-12">
@@ -396,7 +464,7 @@
                                 </div>
                             </div>
                         </div>
-                    </section>
+                    </section> -->
                     <!-- Portfolio End -->
 
                     <!-- Testimonial Start
@@ -482,8 +550,8 @@
                     <section class="wow fadeIn" data-wow-delay="0.1s">
                         <div class="bg-secondary text-light text-center p-5">
                             <div class="d-flex justify-content-center mb-4">
-                                <a class="btn btn-dark btn-square mx-1" href="https://github.com/shaisabm"><i class="fab fa-github"></i></a>
-                                <a class="btn btn-dark btn-square mx-1" href="https://www.linkedin.com/in/shaisab-mistry/"><i class="fab fa-linkedin-in"></i></a>
+                                <a class="btn btn-dark btn-square mx-1" href="https://github.com/shaisabm" target="_blank"><i class="fab fa-github"></i></a>
+                                <a class="btn btn-dark btn-square mx-1" href="https://www.linkedin.com/in/shaisab-mistry/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
                                 <a class="btn btn-dark btn-square mx-1" href="#"><i class="fab fa-twitter"></i></a>
                             </div>
 
